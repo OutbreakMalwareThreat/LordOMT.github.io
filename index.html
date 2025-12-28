@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lord OMT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 80px 100px;
+  gap: 60px;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(255,255,255,0.08), transparent 40%),
+    #000;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.hero-text h1 span {
+  color: #5b86e5;
+}
+
+.hero-text p {
+  margin-top: 18px;
+  font-size: 1.05rem;
+  opacity: 0.75;
+}
+
+/* ===== MAIN MOD FEATURE ===== */
+.featured-mod {
+  margin-top: 32px;
+  padding: 24px 28px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.featured-mod h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.featured-mod p {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.featured-mod a {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 20px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  font-size: 0.9rem;
+}
+
+/* ===== PFP ===== */
+.hero-pfp {
+  position: relative;
+}
+
+.pfp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+/* Subtle animated ring (professional) */
+.hero-pfp::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    #5b86e5,
+    #36d1dc,
+    #5b86e5
+  );
+  filter: blur(2px);
+  opacity: 0.9;
+  animation: ringMove 6s linear infinite;
+  z-index: 1;
+}
+
+@keyframes ringMove {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===== LINKS ===== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 56px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #fff;
+  background: #1f3c88;
+  font-size: 0.9rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-text">
+    <h1>
+      Minecraft mods.<br>
+      Built properly.<br>
+      <span>Lord OMT</span>
+    </h1>
+
+    <p>Minecraft Mod Developer • Content Creator</p>
+
+    <div class="featured-mod">
+      <h2>Featured Mod — Increased World Height</h2>
+      <p>
+        Expands Minecraft’s vertical build limit, enabling larger structures,
+        deeper exploration, and improved world generation.
+      </p>
+      <a href="https://modrinth.com/mod/increased-world-height" target="_blank">
+        View on Modrinth
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-pfp">
+    <img src="Sonic_omt.webp" alt="Lord OMT" class="pfp">
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+    <h3>YouTube</h3>
+    <p>Development updates & showcases</p>
+    <a href="https://www.youtube.com/@OutbreakMalwareThreat1" target="_blank">Visit</a>
+  </div>
+
+  <div class="card">
+    <img src="icons8-modrinth-64.png">
+    <h3>Modrinth</h3>
+    <p>All released mods</p>
+    <a href="https://modrinth.com/user/OMT" target="_blank">Profile</a>
+  </div>
+
+  <div class="card">
+    <img src="curseforge.svg">
+    <h3>CurseForge</h3>
+    <p>Projects & downloads</p>
+    <a href="https://www.curseforge.com/members/bravelion1234/projects" target="_blank">Open</a>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png">
+    <h3>Discord</h3>
+    <p>Community & support</p>
+    <a href="https://discord.gg/3AJrWUk2y7" target="_blank">Join</a>
+  </div>
+</main>
+
+<footer>
+  © 2025 Lord OMT • All rights reserved
+</footer>
+
+</body>
+</html>
